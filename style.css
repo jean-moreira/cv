@@ -1,0 +1,1663 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Orbitron:wght@600&family=Press+Start+2P&family=Raleway:wght@300&family=Sacramento&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* general font and font-size */
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 100px;
+  font-weight: lighter;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+li {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+ul {
+  /* enlever les points  */
+  text-align: left;
+  list-style: none;
+}
+
+/* general header, general section and footer  */
+
+header {
+  background-color: #d9f8f8;
+  color: #66bfbf;
+}
+
+/* section colors */
+section {
+  background-color: #eaf6f6;
+}
+section h2 {
+  font-size: 40px;
+}
+
+/* footer */
+
+footer {
+  background-color: #66bfbf;
+  /* margin-top: 20px; */
+  height: 30vh;
+
+  width: auto;
+  color: #eaf6f6;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.footerText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+/* footer img positionning  */
+
+.linksDiv {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+footer img {
+  height: 80px;
+  width: auto;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.indexBothContainer {
+  background-color: white;
+}
+
+/* index page header  */
+
+.indexHeader {
+  position: relative;
+  height: 100vh;
+  width: auto;
+}
+.indexHeader .textHeader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.indexHeader .h1Jean {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: -150px;
+  transform: translate(-50%);
+}
+.indexHeader .textHeader p {
+  margin-top: 20px;
+}
+
+/* index header images */
+
+.cloudAbove,
+.cloudAbove2,
+.forestImg1,
+.forestImg2 {
+  position: absolute;
+  width: auto;
+}
+
+.forestImg1 {
+  height: 250px;
+  bottom: 10vh;
+  left: 10%;
+}
+
+.forestImg2 {
+  height: 200px;
+  bottom: 30vh;
+  right: 10%;
+}
+
+.cloudAbove {
+  height: 200px;
+  left: 18%;
+  top: 8%;
+  z-index: 4;
+}
+.cloudAbove2 {
+  height: 200px;
+  right: 18%;
+  top: 15%;
+  z-index: 4;
+}
+
+/* presentation container */
+
+.presentationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.presentationContainerUp {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+.photoCvDiv {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  flex: 1.5;
+  margin-bottom: 20px;
+}
+
+.photoCvDiv img {
+  height: 350px;
+  width: auto;
+}
+.textPhotoCvDiv {
+  display: flex;
+  flex: 1.4;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/* .textPhotoCvDiv h2 {
+  font-size: 40px;
+} */
+.textPhotoCvDiv p {
+  margin-top: 20px;
+  width: 70%;
+  max-width: 600px;
+  text-align: justify;
+}
+
+/* Coding skill */
+
+.codingSkills img {
+  width: auto;
+  height: 100px;
+}
+
+.codingSkills {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.htmlText,
+.cssText,
+.jsText {
+  text-align: center;
+}
+
+.indexProjetLinks,
+.gnmProjetLinks,
+.clockProjetLinks {
+  width: 45%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* font-weight: bolder; */
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #66bfbfdd;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.gmnSection,
+.clockSection {
+  display: flex;
+  align-items: center;
+}
+/* .indexRolex {
+  width: 70px;
+  height: auto;
+}
+.indexGaming {
+  width: 70px;
+  height: auto;
+}
+.indexBBC {
+  width: 90px;
+  height: auto;
+} */
+.indexLink a,
+.guessMyNumberLink a,
+.clockLink a,
+.BBCsignInLink a {
+  color: #222;
+  padding: 0 5px 0 5px;
+  border-style: none;
+  border: none;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+.indexLink a:hover,
+.guessMyNumberLink a:hover,
+.clockLink a:hover,
+.BBCsignInLink a:hover {
+  background-color: #d9f8f8;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid #66bfbf 3px;
+  border-radius: 20px;
+}
+
+/* index .bothContainer, displaying them side by side */
+
+.indexBothContainer {
+  padding-top: 20px;
+  display: flex;
+  justify-items: start;
+  justify-content: space-evenly;
+}
+
+.indexMiddleLeftContainer,
+.indexMiddleRightContainer {
+  width: 40%;
+}
+
+/* modal part  */
+
+/* overlay and modal */
+
+.hidden {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+#modal {
+  position: absolute;
+  top: 190vh;
+  left: 50%;
+  transform: translateX(-50%);
+  /* margin-top: auto; */
+  width: 60%;
+  height: auto;
+  z-index: 7;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#modal2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: auto;
+  z-index: 7;
+}
+
+/* modal becoming nice */
+
+#modal,
+#modal2 {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  padding: 30px 30px 30px 30px;
+  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* modal header and button */
+.modalHeader,
+.modalHeader2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 20px;
+  border-bottom: solid rgba(0, 0, 0, 0.7) 3px;
+  border-right: solid rgba(0, 0, 0, 0.7) 3px;
+
+  border-radius: 20px;
+  border-top: none;
+  border-left: none;
+}
+.btnCloseModal,
+.btnCloseModal2 {
+  border: none;
+  font-size: inherit;
+  background-color: inherit;
+  font-size: 40px;
+  color: #66bfbf;
+}
+.btnCloseModal:hover,
+.btnCloseModal2:hover {
+  color: whitesmoke;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-style: solid;
+  font-size: 50px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  background-color: rgba(220, 20, 60, 0.6);
+}
+#modal h2,
+#modal2 h2 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#modal h3,
+#modal2 h3 {
+  border: 1.5px solid;
+  border-image: linear-gradient(70deg, #66bfbf, #d9f8f8, #eaf6f6) 1;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-right: 20%;
+
+  display: inline-block;
+  font-size: 30px;
+}
+#modal h4,
+#modal2 h4 {
+  margin-left: 20%;
+  font-size: 20px;
+  text-align: left;
+}
+#modal p,
+#modal2 p {
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+
+  width: 55%;
+}
+#dateModalBody2,
+#dateModalBody {
+  font-size: 15px;
+}
+
+.modalItalic {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 10px;
+}
+
+/* index both container */
+
+.indexBothContainer {
+  padding-bottom: 20px;
+}
+
+.indexBothContainer h2 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  font-weight: lighter;
+}
+
+.indexMiddleLeftContainer h3,
+.indexMiddleRightContainer h3 {
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.indexMiddleLeftTitleAndButton,
+.indexMiddleRightTitleAndbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.btnOpenModal,
+.btnOpenModal2 {
+  color: #66bfbf;
+  border-style: none;
+  background-color: inherit;
+  font-size: 60px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.btnOpenModal:hover,
+.btnOpenModal2:hover {
+  background-color: #eaf6f6;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+/* left side img and text  */
+
+.dateMiddleRight {
+  border: #66bfbf 2px solid;
+  padding: 4px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: inline;
+}
+
+.eurofinsDiv,
+.picnicDiv,
+.procterDiv,
+.airbnbDiv,
+.voyageDiv,
+.dispeoDiv,
+.franceExpressDiv,
+.railtechDiv {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.eurofinsImgDiv,
+.picnicImgDiv,
+.procterImgDiv,
+.airbnbImgDiv,
+.voyageImgDiv,
+.dispeoImgDiv,
+.franceExpressImgDiv,
+.railtechImgDiv {
+  display: flex;
+  flex: 1.3;
+  justify-content: center;
+  align-items: center;
+}
+.textEurofins,
+.textPicnic,
+.textProcter,
+.textAirbnb,
+.textVoyage,
+.textDispeo,
+.textFranceExpress,
+.textRailtech {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1.4;
+}
+.textRailtech {
+  margin-bottom: 30px;
+}
+.eurofinsImg {
+  height: 40px;
+  width: auto;
+}
+.picnicImg {
+  height: 70px;
+  width: auto;
+}
+
+.procterImg {
+  height: 110px;
+  width: auto;
+}
+
+.airbnbImg {
+  height: 100px;
+  width: auto;
+}
+.voyageImg {
+  height: 70px;
+  width: auto;
+}
+.dispeoImg {
+  height: 60px;
+  width: auto;
+}
+
+.franceExpressImg {
+  height: 110px;
+  width: auto;
+}
+.railtechImg {
+  height: 110px;
+  width: auto;
+}
+
+/* right side img and text */
+
+.dateMiddleRight {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.skemaDiv,
+.isteliDiv,
+.gastonDiv {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.skemaImgDiv,
+.isteliImgDiv,
+.gastonImgDiv {
+  display: flex;
+  width: 100%;
+  flex: 1.3;
+  align-items: center;
+  justify-content: center;
+}
+.textSkema,
+.textGaston,
+.textIsteli {
+  display: flex;
+  flex: 1.4;
+  flex-direction: column;
+}
+.skemaImg,
+.GastonImg {
+  height: 40px;
+  width: auto;
+}
+
+/* right side text spacing */
+.textSkema p,
+.textSkema li,
+.textIsteli p,
+.textGaston p {
+  margin-top: 7px;
+}
+.textSkemaYearLi li {
+  font-size: 18px;
+}
+.certificatSkemaLi {
+  margin-left: 10px;
+}
+
+/* -------------------- */
+/* Clock general part   */
+/* ____________________ */
+
+.gmnHeader,
+.clockHeader {
+  height: 10vh;
+  width: 100%;
+}
+.gmnSection,
+.clockSection {
+  height: 7vh;
+  width: 100%;
+}
+
+.gmnMainClass {
+  width: 75%;
+  height: 70vh;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clockMainClass {
+  width: 80%;
+  /* min-height: auto; */
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* flex: 1.5; */
+}
+
+/* -------------------- */
+/* GUESS MY NUMBER HTML */
+/* ____________________ */
+
+.gmnMainClass p {
+  font-family: "Press Start 2p", sans-serif;
+}
+
+.gnmTop,
+.gnmBottom {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 50%;
+  font-family: "Press Start 2p", sans-serif;
+  background-color: #eee;
+  color: #222;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  border: #222 solid 5px;
+}
+
+/* gnm top section */
+
+/* gnm top top section */
+
+.gnmTopTop {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gnmTopTop p {
+  padding: 20px;
+  font-size: 18px;
+  color: #222;
+}
+.gnmAgainDiv {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.gnmAgainDiv P {
+  color: #222;
+}
+/* gnm top Bottom section */
+
+.gnmTopBottom {
+  height: 55%;
+  width: 100%;
+}
+.gnmH1 {
+  font-family: "Press Start 2p", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+.gnmNumberP {
+  font-size: 50px;
+  background-color: #222;
+  color: #eee;
+}
+
+/* gnm positionning of guess and Hr  */
+
+.gnmHrAndNumber {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.gnmhr {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translatex(-50%);
+  border: #222 solid 5px;
+  color: #222;
+  width: 100%;
+}
+.gnmNumber {
+  background-color: #222;
+  padding: 15px;
+  position: absolute;
+  font-size: 30px;
+  color: #eee;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 17;
+}
+
+/* 
+gnm bottom
+*/
+
+/* gnm bottom left  */
+
+.gnmBottom {
+  height: 50%;
+  position: relative;
+}
+.gnmBottom p {
+  color: #222;
+}
+
+.gnmGuess {
+  background-color: #eee;
+  border: solid 2px #222;
+  color: #222;
+  font-family: "Press Start 2p", sans-serif;
+  font-size: 25px;
+  width: 75px;
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.gnmCheck {
+  position: absolute;
+  bottom: 20%;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+/* gnm bottom right */
+
+.gnmBottom p {
+  font-size: 15px;
+}
+.gnmGuessIndicator {
+  position: absolute;
+  top: 30%;
+  left: 55%;
+}
+.gnmScore {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+}
+.gnmHighscore {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+}
+
+/* gnm buttons */
+
+.gnmBtn {
+  display: inline;
+  padding: 4px 8px 4px 8px;
+  background-color: #222;
+  color: #eee;
+  font-family: "Press Start 2p", sans-serif;
+  border: none;
+  font-size: 30px;
+}
+.gnmBtn:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+/* ////////////// */
+/* CLOCK SECTION */
+/* ////////////// */
+
+/* appearence and details of the clock */
+.horlogeBoite {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #66bfbffa;
+  border: 5px solid lightgoldenrodyellow;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  width: 22em;
+  height: 22em;
+  border-radius: 50%;
+}
+
+/* taking the and the center into the clock */
+
+.horlogeBoite img {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  left: 50%;
+  top: 40px;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+.centreHorloge {
+  position: absolute;
+  background-color: darkgreen;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 2px 20px;
+  z-index: 4;
+}
+
+/* styling all numbers CHANGE THE FONT TYPE LATER ON */
+
+.nombres div {
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  color: lightgoldenrodyellow;
+}
+
+/* positionning the number individually */
+
+.douze {
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.trois {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.neuf {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.six {
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* creating and styling arrows  */
+
+.fleche {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.fleche div {
+  background-color: white;
+  width: 7px;
+  height: 120px;
+  position: absolute;
+  transform-origin: bottom center;
+  bottom: 50%;
+  border-radius: 50% 50% 0 0;
+  z-index: 3;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* adjust each one invididually */
+
+.hour {
+  height: 90px;
+  transform: rotate(30deg);
+}
+.minute {
+  height: 200px;
+  transform: rotate(200deg);
+}
+.fleche .seconde {
+  height: 90px;
+  transform: rotate(50deg);
+  background-color: goldenrod;
+  transform: rotate(100deg);
+}
+
+/* second horloge  */
+
+.horlogeBoite2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: rgba(5, 15, 35, 1);
+  border: 5px solid lightgray;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  width: 25em;
+  height: 18em;
+  border-radius: 15%;
+}
+.contourBlanc {
+  position: absolute;
+  background-color: inherit;
+  border: 2px solid lightgray;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  width: 21.25em;
+  height: 15.39em;
+  border-radius: 10%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.horlogeBoite3 {
+  position: absolute;
+  border-radius: 5px;
+  width: 60%;
+  height: 40%;
+  box-shadow: inset 0px 0px 8px rgba(238, 238, 238, 0.4);
+  background-color: rgb(47, 47, 47, 0.75);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.casioImg {
+  position: absolute;
+  height: 20px;
+  width: auto;
+  left: 20%;
+  top: 17%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.heureMinSec {
+  position: absolute;
+  top: 57%;
+  right: 25%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+#hourMinText {
+  font-size: 40px;
+  color: #cbcbcbb7;
+  font-family: "Orbitron", arial;
+  padding-right: 6px;
+}
+#secondText {
+  font-size: 28.5px;
+  color: #cbcbcbb7;
+  font-family: "Orbitron", arial;
+}
+.day2 p {
+  font-size: 30px;
+  color: #cbcbcbb7;
+  font-family: "Orbitron", arial;
+}
+.day2 {
+  position: absolute;
+  top: 38%;
+  right: 25%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.AMPM {
+  position: absolute;
+  top: 40%;
+  left: 28.5%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+}
+.AMPM p {
+  font-size: 22px;
+  color: #cbcbcbb7;
+  font-family: "Orbitron", arial;
+}
+.bell {
+  height: 13px;
+  width: auto;
+  z-index: 6;
+  position: absolute;
+  top: 34%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+}
+.battery {
+  height: 17px;
+  width: auto;
+  z-index: 6;
+  position: absolute;
+  top: 31%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+}
+
+@media (max-width: 1100px) {
+  /* menu de navigation */
+  .gmnSection,
+  .clockSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* -------*/
+  /* Index  */
+  /* ------ */
+  .cloudAbove {
+    top: 4%;
+  }
+  .cloudAbove2 {
+    top: 10%;
+    height: 120px;
+  }
+  .forestImg2 {
+    height: 150px;
+    bottom: 20vh;
+  }
+  .presentationContainerUp {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .photoCvDiv {
+    height: 300px;
+  }
+
+  .indexBothContainer {
+    flex-direction: column;
+
+    /* justify-content: center; */
+    /* justify-items: center; */
+  }
+  .indexMiddleLeftContainer,
+  .indexMiddleRightContainer {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .indexMiddleRightContainer {
+    margin-bottom: 20px;
+  }
+  .indexMiddleLeftTitleAndButton h2,
+  .indexMiddleRightTitleAndbutton h2 {
+    margin-bottom: 0;
+  }
+  .skemaDiv {
+    margin: 10px;
+  }
+  .dateMiddleRight {
+    margin: 10px;
+  }
+  #modal,
+  #modal2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  /* ------------------------ */
+  /* Guess my number section  */
+  /* ------------------------ */
+
+  .gnmTopTop p {
+    font-size: small;
+  }
+  .gnmH1 {
+    font-size: 25px;
+  }
+  .gnmCheck {
+    font-size: 25px;
+    bottom: 40%;
+  }
+  /* -------------- */
+  /* Clock Section  */
+  /* -------------- */
+
+  .horlogeBoite {
+    /* margin-bottom: 20px; */
+  }
+  .clockMainClass {
+    flex-direction: column;
+    height: 80vh;
+    /* margin-bottom: 190px; */
+  }
+  /* .horlogeBoite {
+    margin-bottom: 20px;
+  }
+  .horlogeBoite2 {
+    margin-bottom: 20px;
+  } */
+}
+
+@media (max-width: 650px) {
+  /* -------*/
+  /* Index  */
+  /* ------ */
+
+  .cloudAbove {
+    top: 4%;
+    height: 140px;
+  }
+  .cloudAbove2 {
+    top: 10%;
+    height: 80px;
+    right: 14%;
+  }
+  .forestImg1 {
+    left: 5%;
+    height: 170px;
+  }
+  .forestImg2 {
+    height: 100px;
+    bottom: 20vh;
+  }
+  .presentationContainerUp {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .photoCvDiv {
+    height: 250px;
+  }
+  .codingSkills {
+    justify-content: space-between;
+    margin-left: none;
+    margin-right: none;
+    width: 80%;
+  }
+  .codingSkills img {
+    width: auto;
+    height: 60px;
+  }
+  .indexProjetLinks {
+    width: 50%;
+    padding: 10px;
+    /* font-weight: bolder; */
+    display: flex;
+    flex-direction: column;
+  }
+  .indexProjetLinks .guessMyNumberLink,
+  .indexProjetLinks .clockLink,
+  .indexProjetLinks .BBCsignInLink {
+    padding: 10px;
+  }
+  .indexBothContainer {
+    flex-direction: column;
+  }
+  .indexMiddleLeftContainer,
+  .indexMiddleRightContainer {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .indexMiddleRightContainer {
+    margin-bottom: 20px;
+  }
+  .indexLink a:hover,
+  .guessMyNumberLink a:hover,
+  .clockLink a:hover,
+  .BBCsignInLink a:hover {
+    background-color: #d9f8f8;
+    cursor: pointer;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: solid #66bfbf 2px;
+    border-radius: 20px;
+  }
+  .btnOpenModal:hover,
+  .btnOpenModal2:hover {
+    background-color: #eaf6f6;
+    cursor: pointer;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 20px;
+  }
+  .btnCloseModal,
+  .btnCloseModal2 {
+    border: none;
+    font-size: inherit;
+    background-color: inherit;
+    font-size: 30px;
+    color: #66bfbf;
+  }
+  .btnCloseModal:hover,
+  .btnCloseModal2:hover {
+    color: whitesmoke;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 25%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-style: solid;
+    font-size: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgba(220, 20, 60, 0.6);
+  }
+  .indexMiddleLeftTitleAndButton h2,
+  .indexMiddleRightTitleAndbutton h2 {
+    margin-bottom: 0;
+  }
+
+  .skemaImg {
+    height: 30px;
+    width: auto;
+  }
+  .isteliImg {
+    height: 35px;
+    width: 105px;
+  }
+  .GastonImg {
+    width: 105px;
+  }
+  .dispeoImg {
+    height: 40px;
+    width: auto;
+  }
+
+  .eurofinsImg {
+    height: 28px;
+    width: auto;
+  }
+  .procterImg {
+    height: 78px;
+    width: auto;
+  }
+
+  .airbnbImg {
+    height: 65px;
+    width: auto;
+  }
+  .skemaDiv {
+    margin: 10px;
+  }
+  .dateMiddleRight {
+    margin: 10px;
+  }
+  #modal,
+  #modal2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  #modal2 {
+    position: absolute;
+    top: 350vh;
+  }
+  /* ------------------------ */
+  /* Guess my number section  */
+  /* ------------------------ */
+
+  .gnmProjetLinks {
+    width: 80%;
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+  .gnmTopTop p {
+    font-size: xx-small;
+    padding-right: none;
+    text-align: right;
+  }
+  .gnmH1 {
+    font-size: 25px;
+  }
+  .gnmAgain {
+    font-size: 15px;
+  }
+
+  .gnmH1 {
+    font-size: 25px;
+  }
+  .gnmCheck {
+    font-size: 15px;
+    bottom: 40%;
+  }
+  .gnmGuessIndicator p,
+  .gnmScore p,
+  .gnmHighscore p {
+    font-size: xx-small;
+  }
+
+  /* -------------- */
+  /* Clock Section  */
+  /* -------------- */
+
+  .clockProjetLinks {
+    width: 80%;
+  }
+  .horlogeBoite {
+    margin-bottom: 20px;
+  }
+  .clockMainClass {
+    flex-direction: row;
+    height: 80vh;
+    margin-bottom: 190px;
+  }
+  .contourBlanc {
+    width: 18em;
+    height: 11.5em;
+  }
+  .casioImg {
+    top: 10%;
+  }
+  #hourMinText {
+    font-size: 30px;
+  }
+  #secondText {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* -------*/
+  /* Index  */
+  /* ------ */
+
+  .cloudAbove {
+    top: 4%;
+    height: 140px;
+  }
+  .cloudAbove2 {
+    top: 20%;
+    height: 80px;
+    right: 14%;
+  }
+  .forestImg1 {
+    bottom: 10%;
+    left: 15%;
+    height: 170px;
+  }
+  .forestImg2 {
+    height: 120px;
+    bottom: 25vh;
+  }
+  .presentationContainerUp {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .photoCvDiv img {
+    height: 250px;
+    width: auto;
+  }
+  .textPhotoCvDiv p {
+    width: 90%;
+  }
+  .codingSkills {
+    justify-content: space-between;
+    margin-left: none;
+    margin-right: none;
+    width: 80%;
+  }
+  .codingSkills img {
+    width: auto;
+    height: 60px;
+  }
+  .indexProjetLinks {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .indexProjetLinks .guessMyNumberLink,
+  .indexProjetLinks .clockLink,
+  .indexProjetLinks .BBCsignInLink {
+    padding: 10px;
+  }
+
+  .htmlText p,
+  .cssText p,
+  .jsText p {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .indexBothContainer {
+    flex-direction: column;
+  }
+  .indexMiddleLeftContainer,
+  .indexMiddleRightContainer {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .indexMiddleRightContainer {
+    margin-bottom: 20px;
+  }
+  .indexMiddleLeftTitleAndButton h2,
+  .indexMiddleRightTitleAndbutton h2 {
+    margin-bottom: 0;
+  }
+  .indexBothContainer h3 {
+    font-size: medium;
+  }
+  .textSkemaYearLi li {
+    font-size: 15px;
+  }
+  .skemaImg {
+    height: 30px;
+    width: auto;
+  }
+  .isteliImg {
+    height: 35px;
+    width: 105px;
+  }
+  .GastonImg {
+    width: 105px;
+  }
+  .dispeoImg {
+    height: 40px;
+    width: auto;
+  }
+
+  .eurofinsImg {
+    height: 24px;
+    width: 120px;
+  }
+
+  .procterImg {
+    height: 78px;
+    width: auto;
+  }
+
+  .airbnbImg {
+    height: 65px;
+    width: auto;
+  }
+  .skemaDiv {
+    margin: 10px;
+  }
+  .dateMiddleRight {
+    margin: 5px;
+  }
+  .picnicDiv {
+    margin-bottom: 10px;
+  }
+  #modal,
+  #modal2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  #modal2 {
+    position: absolute;
+    top: 390vh;
+  }
+  .modalHeader,
+  .modalHeader2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .modalHeaderText,
+  .modalHeaderText2 {
+    padding-right: 20px;
+  }
+  .divBtnCloseModal,
+  .divBtnCloseModal2 {
+    padding-right: 8px;
+  }
+  #modal h4,
+  #modal2 h4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #modal h3,
+  #modal2 h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #modal p,
+  #modal2 p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  /* ------------------------ */
+  /* Guess my number section  */
+  /* ------------------------ */
+
+  .gmnMainClass {
+    height: 50vh;
+  }
+  .gnmTopTop {
+    flex-direction: column;
+  }
+
+  .gnmProjetLinks {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 90%;
+  }
+  .gnmTopTop p {
+    font-size: xx-small;
+    padding-right: none;
+    text-align: right;
+  }
+  .gnmAgain {
+    font-size: 10px;
+  }
+  .gnmH1 {
+    font-size: 20px;
+  }
+  .gnmNumberP {
+    font-size: 35px;
+  }
+  .gnmCheck {
+    font-size: 15px;
+    bottom: 40%;
+  }
+  .gnmGuessIndicator p,
+  .gnmScore p,
+  .gnmHighscore p {
+    font-size: xx-small;
+  }
+  #input {
+    width: 70px;
+    padding: 10px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .gnmCheck {
+    font-size: 10px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .gnmGuessIndicator {
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gnmScore {
+    top: 82%;
+    left: 5%;
+  }
+  .gnmHighscore {
+    top: 91%;
+    left: 5%;
+  }
+  .footerDiv h2 {
+    font-size: 20px;
+  }
+  /* -------------- */
+  /* Clock Section  */
+  /* -------------- */
+
+  .clockProjetLinks {
+    width: 80%;
+    padding-top: none;
+    padding-bottom: none;
+  }
+  .horlogeBoite {
+    margin-bottom: 20px;
+    width: 19em;
+    height: 19em;
+  }
+  .clockMainClass {
+    flex-direction: row;
+    height: 80vh;
+    margin-bottom: 190px;
+  }
+
+  .contourBlanc {
+    width: 15em;
+    height: 11.5em;
+  }
+  .casioImg {
+    top: 10%;
+  }
+  #hourMinText {
+    font-size: 30px;
+  }
+  #secondText {
+    font-size: 21px;
+  }
+}
